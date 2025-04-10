@@ -1,0 +1,24 @@
+{
+  "name": "ai-ad-generator-project",
+  "version": "1.0.0",
+  "description": "AI Ad Generator: From Reference to Brand-Aligned Creative",
+  "main": "index.js",
+  "scripts": {
+    "start:backend": "cd backend && node server.js",
+    "start:frontend": "cd ai-ad-generator && npm start",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "install:all": "npm install && cd backend && npm install && cd ../ai-ad-generator && npm install"
+  },
+  "keywords": [
+    "ai",
+    "advertisement",
+    "generator",
+    "openai",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
